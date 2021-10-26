@@ -49,7 +49,7 @@ basic.forever(function () {
         y = randint(0, 4)
         b = led.pointBrightness(x, y)
         if (b == 0) {
-            SetDirection(x, y, randint(0, 64))
+            SetDirection(x, y, randint(0, 32))
         } else if (b >= CheckDirection(x, y)) {
             SetDirection(x, y, 0)
         }
